@@ -12,7 +12,7 @@ const TodoCard = (props) => {
         >
             <Text style={[
                 todo_card.text,
-                {textDecorationLine: props.data.isDone ? "line-through" : null}
+                {textDecorationLine: props.data.isDone ? "line-through" : null, opacity: props.data1.isDone === true ? 0.1 : null}
                 ]}>{props.data.todo}</Text>
         </TouchableOpacity>
     )
